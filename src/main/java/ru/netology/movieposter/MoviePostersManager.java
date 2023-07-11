@@ -26,13 +26,7 @@ public class MoviePostersManager {
     }
 
     public MoviePosters[] findLast() {
-        int arrayLength;
-        if (items.length < 5) {
-            arrayLength = items.length;
-        } else {
-            arrayLength = 5;
-        }
-        MoviePosters[] tmp = new MoviePosters[arrayLength];
+        MoviePosters[] tmp = new MoviePosters[items.length];
         for (int i = 0; i < tmp.length; i++) {
             tmp[i] = items[items.length - 1 - i];
         }
